@@ -1,6 +1,5 @@
-#################################
-####### General Description #####
-#################################
+## General Description 
+
 
 The steps of the data cleaning are: 
 
@@ -11,37 +10,27 @@ The steps of the data cleaning are:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
-##################################
-############ 1. Merge data #######
-##################################
+### Merge data 
 
 The data merged using row combination of rows for the files directy in train and test folder. The files can be merged in three parts: subject (x), features (y), and activity (z). 
 
 
 
-##################################
-########## 2. Extract data #######
-##################################
+### Extract data
 
 To select the colmun names that have means and the standard deviation, a grep function with a string pattern were used.
 
-##################################
-# 3. descriptive activity names ##
-##################################
+### Descriptive activity names
 
 To match the activity names with the numbers in the data, join_inner was used between the data and the activity_labels.txt
 
 
-##################################
-# 4. descriptive variables names #
-##################################
+### Descriptive variables names 
 
 Update th names of the colmun names to more descriptive names by changeing the abbreviations to full names.
 
 
-##################################
-######## 5. Summary ##############
-##################################
+### Summary 
 
 Create a new dataset with a summary of the means grouped by activity and subject
 
